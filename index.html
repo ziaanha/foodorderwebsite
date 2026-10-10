@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crave Corner | Taste the Extraordinary</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#" class="logo">CRAVE<span>.</span></a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Our Menu</a>
+            <a href="#about">Our Story</a>
+        </nav>
+
+        <a href="#menu" class="cart-button">
+            My Cart <span id="cart-count">0</span>
+        </a>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">GOOD FOOD. GOOD MOOD.</p>
+                <h1>Made to be<br><span>craved.</span></h1>
+                <p class="hero-description">
+                    Bold flavours, fresh ingredients, and unforgettable
+                    bites. Discover your next favourite meal.
+                </p>
+                <a href="#menu" class="primary-button">Explore the menu ↗</a>
+
+                <div class="hero-note">
+                    <span class="status-dot"></span>
+                    Fresh flavours. Made with love.
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1100&q=85"
+                    alt="Gourmet burger with fresh ingredients">
+                <div class="image-label">
+                    <span>THE CROWD FAVOURITE</span>
+                    <strong>Classic Smash Burger</strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section" id="menu">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">A LITTLE SOMETHING FOR EVERY CRAVING</p>
+                    <h2>Explore our <span>menu.</span></h2>
+                </div>
+                <p class="section-description">
+                    Your cravings, our creations.
+                </p>
+            </div>
+
+            <div class="menu-controls">
+                <div class="search-box">
+                    <span>⌕</span>
+                    <input type="search" id="search-input"
+                        placeholder="Search your favourites...">
+                </div>
+
+                <div class="filters" id="filters">
+                    <button class="filter active" data-category="All">All</button>
+                    <button class="filter" data-category="Burgers">Burgers</button>
+                    <button class="filter" data-category="Pizza">Pizza</button>
+                    <button class="filter" data-category="Sides">Sides</button>
+                    <button class="filter" data-category="Desserts">Desserts</button>
+                    <button class="filter" data-category="Drinks">Drinks</button>
+                </div>
+            </div>
+
+            <div class="food-grid" id="food-grid"></div>
+            <p class="no-results" id="no-results" hidden>
+                No dishes found. Try another search!
+            </p>
+        </section>
+
+        <section class="story-section" id="about">
+            <div>
+                <p class="eyebrow">MORE THAN JUST A MEAL</p>
+                <h2>Good food brings<br>people <span>together.</span></h2>
+            </div>
+            <p>
+                At Crave Corner, every dish celebrates bold flavours,
+                simple ingredients, and the joy of sharing a great meal.
+                Come hungry. Leave happy.
+            </p>
+        </section>
+
+        <section class="cart-section" id="cart">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">YOUR PICK, YOUR PLATE</p>
+                    <h2>Your <span>cart.</span></h2>
+                </div>
+                <button id="clear-cart" class="text-button">Clear cart</button>
+            </div>
+
+            <div id="cart-items" class="cart-items">
+                <p class="empty-cart">Your cart is waiting for something delicious.</p>
+            </div>
+
+            <div class="cart-total">
+                <span>Estimated total</span>
+                <strong id="cart-total">₹0</strong>
+            </div>
+
+            <button id="demo-checkout" class="primary-button checkout-button">
+                Preview order
+            </button>
+            <p class="demo-note">Demo only — no real order or payment will be made.</p>
+            <p id="checkout-message" class="checkout-message" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#" class="logo">CRAVE<span>.</span></a>
+        <p>Made with flavour and a little obsession. © 2026 Crave Corner.</p>
+        <a href="#home">Back to top ↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
